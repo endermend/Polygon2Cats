@@ -70,6 +70,7 @@ class StatementProperties:
     tutorial: str | None
     sampleTests: list[SampleTest]
     path: Path | None
+    extraResources : list | None
 
     def __post_init__(self):
         self.sampleTests = [SampleTest(**el) for el in self.sampleTests]
